@@ -58,8 +58,8 @@ export default function () {
     .add(animatePawState(cat.pawRight.up), 'start+=0.19')
     .timeScale(1.6);
 
-  gsap.from('.terminal-code line', {
-    drawSVG: '0%',
+  gsap.from('.terminal-code > line', {
+    opacity: 0,
     duration: 0.1,
     stagger: 0.1,
     ease: 'none',
@@ -85,7 +85,7 @@ export default function () {
   const rotator = gsap.utils.random(-50, 50, 1, true);
   const dir = (amt: number) => `${gsap.utils.random(['-', '+'])}=${amt}`;
 
-  const animateNotes = (els: HTMLElement[]) => {
+  const animateNotes = (els: HTMLElement[]): GSAPTween => {
     els.forEach((el) => {
       gsap.set(el, {
         stroke: colorizer(),
