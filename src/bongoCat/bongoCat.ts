@@ -85,7 +85,7 @@ export default function () {
   const rotator = gsap.utils.random(-50, 50, 1, true);
   const dir = (amt: number) => `${gsap.utils.random(['-', '+'])}=${amt}`;
 
-  const animateNotes = (els: HTMLElement[]): GSAPTween => {
+  const animateNotes = (els: HTMLElement[]) => {
     els.forEach((el) => {
       gsap.set(el, {
         stroke: colorizer(),
