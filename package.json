@@ -1,0 +1,20 @@
+{
+  "name": "vite-typescript-starter",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "semi-build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/gsap": "^3.0.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.7"
+  },
+  "dependencies": {
+    "gsap": "^3.10.4",
+    "lodash": "^4.17.21"
+  }
+}
